@@ -213,3 +213,22 @@ const numList = numArrays[numArrays.length - 1];
 
 console.log('Exercise 13 result:', numList);
 
+/*
+Exercise 14: Accessing within nested arrays
+
+1) Retrieve the number `66` from the `numArrays` array. As part of this process
+   do not alter the original `numArrays` array.
+
+2) Assign it to a variable called `num`.
+
+Complete Exercise 14 in the space below:
+*/
+let num = 0;
+for (let i = 0; i < numArrays.length; i++) {
+    for (let j = 0; j < numArrays[i].length; j++) {
+        if ( numArrays[i][j] === 66) {
+             num =numArrays[i][j];
+        }        
+    }    
+}
+console.log('Exercise 14 result:', num);
